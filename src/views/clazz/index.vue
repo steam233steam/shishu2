@@ -45,13 +45,7 @@
         <el-table-column prop="name" label="班级名称" align="center" />
         <el-table-column prop="beginDate" label="开课日期" align="center" />
         <el-table-column prop="endDate" label="结课日期" align="center" />
-        <el-table-column prop="status" label="状态" align="center">
-          <template #default="scope">
-            <el-tag :type="scope.row.status === 1 ? 'success' : 'danger'">
-              {{ scope.row.status === 1 ? '正常' : '已结课' }}
-            </el-tag>
-          </template>
-        </el-table-column>
+        <el-table-column prop="status" label="状态" align="center" />
         <el-table-column prop="updateTime" label="最后修改时间" align="center" />
         <el-table-column label="操作" fixed="right" align="center" width="180">
           <template #default="scope">
