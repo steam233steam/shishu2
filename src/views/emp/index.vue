@@ -289,7 +289,6 @@ const deleteByIds = () => {
 
 <template>
   <h1>员工管理</h1> <br>
-  {{ page }}{{ pagesize }}
   <div class="container">
   <el-form :inline="true" :model="searchEmp">
     <el-form-item label="姓名">
@@ -380,7 +379,6 @@ const deleteByIds = () => {
 
   <!-- 新增/修改员工的对话框 -->
   <el-dialog v-model="dialogVisible" :title="dialogTitle">
-    {{ employee }}
       <el-form ref="employeeFormRef" :model="employee" :rules="rules" label-width="80px">
         <!-- 基本信息 -->
         <!-- 第一行 -->
