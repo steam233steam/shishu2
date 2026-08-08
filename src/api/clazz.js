@@ -5,7 +5,7 @@ import request from "@/utils/request"
 
 export const queryPageApi = (params) =>
 request.get('/clazzs', { params })
-export const addApi = () =>  request.post('/clazzs', clazz)
+export const addApi = (clazz) =>  request.post('/clazzs', clazz)
 
 export const queryInfoApi = (id) =>  request.get(`/clazzs/${id}`)
 
